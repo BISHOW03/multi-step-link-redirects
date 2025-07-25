@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Redirecting...</title>
+    <style>
+      #redirectBtn {
+        display: none;
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Please wait 15 seconds...</h2>
+    <p>Redirecting in <span id="countdown">15</span> seconds.</p>
+
+    <button id="redirectBtn">Go to Next Step</button>
+
+    <script>
+      let timer = 15;
+      const countdown = document.getElementById("countdown");
+      const redirectBtn = document.getElementById("redirectBtn");
+
+      const interval = setInterval(() => {
+        timer--;
+        countdown.textContent = timer;
+        if (timer <= 0) {
+          clearInterval(interval);
+          // Show the button instead of auto redirect
+          redirectBtn.style.display = "inline-block";
+        }
+      }, 1000);
+
+      redirectBtn.addEventListener("click", () => {
+        window.location.href = "step4.html";
+      });
+    </script>
+  </body>
+</html>
