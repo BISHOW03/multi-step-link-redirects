@@ -1,4 +1,4 @@
-# Multi-Step Redirect
+# Multi-Step Link Redirect
 
 This project is a simple HTML-based demo to learn how link redirection works using buttons, timers, and multiple HTML pages.
 
@@ -29,7 +29,7 @@ This project is a simple HTML-based demo to learn how link redirection works usi
 3. Follow the countdown and click the buttons as they appear.
 4. Observe how redirection is controlled step by step.
 
-## ✅ Live Demo (Optional)
+## ✅ View Live Demo
 
 > [Check out demo](https://bishow03.github.io/multi-step-link-redirects/)
 
